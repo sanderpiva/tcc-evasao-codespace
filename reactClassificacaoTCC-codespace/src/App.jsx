@@ -60,8 +60,8 @@ function Form() {
             return; 
         }
         
-        try {
-            const response = await axios.post("http://localhost:5000/api", {
+        try { 
+            const response = await axios.post("https://supreme-enigma-7xg49pjxpw4h4qr-5000.app.github.dev/api", {
                 idade18_25: parseFloat(idade18_25),
                 sexoMas: parseFloat(sexoMas),
                 etniaBca: parseFloat(etniaBca),
