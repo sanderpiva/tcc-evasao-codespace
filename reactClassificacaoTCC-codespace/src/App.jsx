@@ -61,7 +61,8 @@ function Form() {
         }
         
         try { 
-            const response = await axios.post("https://supreme-enigma-7xg49pjxpw4h4qr-5000.app.github.dev/api", {
+            const backendUrl = window.location.origin.replace('5173', '5000') + '/api';
+            const response = await axios.post(backendUrl, {
                 idade18_25: parseFloat(idade18_25),
                 sexoMas: parseFloat(sexoMas),
                 etniaBca: parseFloat(etniaBca),
@@ -73,6 +74,7 @@ function Form() {
             setResult(response.data);
         } catch (error) {
             console.error("Erro ao enviar a solicitação:", error);
+            alert("Erro de conexão com o servidor. Verifique se a porta 5000 está Pública.");
         }
     };
 
