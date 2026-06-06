@@ -20,7 +20,7 @@ Clique no botão verde **"<> Code"** no topo deste repositório, selecione a aba
 2. Inicialize o servidor de desenvolvimento da API Python:
    ```bash
    python app.py
-3. O terminal informará que a API está rodando localmente na porta 5000. Deixe este terminal ativo.
+3. Deixe este terminal aberto durante todo o tempo de uso.
    
 
 ### Passo 3: Inicializar o Frontend (React)
@@ -33,7 +33,24 @@ Clique no botão verde **"<> Code"** no topo deste repositório, selecione a aba
    
 3. Inicie a aplicação web React:
    ```bash
-   npm start
+   npm run dev
 
-4. O ecossistema do Codespaces detectará o tráfego na porta 3000 e abrirá automaticamente uma nova aba no seu navegador carregando a interface do sistema!
+4. Após rodar o comando acima, o Codespaces identificará a aplicação e permitirá o acesso. Basta clicar no link gerado na aba de portas (Ex: porta 5173) para abrir a interface no seu navegador.
+
+---
+
+## ⚠️ AVISO: Configuração de Portas
+Para que a comunicação entre o React e a API Flask funcione, você deve configurar as portas como Públicas:
+
+Vá na aba PORTAS (abaixo do terminal).
+
+- Clique com o botão direito nas portas do backend (Ex: 5000) e frontend (Ex: 5173).
+
+- Selecione "Alterar Visibilidade da Porta" para Pública.
+
+- Após isso, clique no link gerado na porta do frontend para abrir a interface no seu navegador.
+
+---
+
+**Autor** Sander Gustavo Piva
    
