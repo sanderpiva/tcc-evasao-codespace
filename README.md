@@ -27,16 +27,17 @@ Clique no botão verde **"<> Code"** no topo deste repositório, selecione a aba
 
 1. Abra um segundo terminal no painel (clique no ícone de "+" localizado no canto superior direito do painel de terminais).
 
-2. Execute esses comandos na sequencia:
-   - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-   - export NVM_DIR="$HOME/.nvm"[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-   - nvm install --lts
+2. Execute esses comandos na sequência (cada linha é um comando):
+   ```bash
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+   export NVM_DIR="$HOME/.nvm"[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+   nvm install --lts
    
-3. Navegue até a pasta do frontend:
+4. Navegue até a pasta do frontend:
    ```bash
    cd reactClassificacaoTCC-codespace
    
-4. Inicie a aplicação web React:
+5. Inicie a aplicação web React:
    ```bash
    npm run dev
 
