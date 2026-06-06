@@ -1,0 +1,16 @@
+{
+  "name": "TCC Evasao Acadêmica - Fullstack",
+  "image": "mcr.microsoft.com/devcontainers/python:3.10",
+  "forwardPorts": [5000, 3000],
+  "portsAttributes": {
+    "5000": {
+      "label": "Backend (Flask)",
+      "onAutoForward": "notify"
+    },
+    "3000": {
+      "label": "Frontend (React)",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postCreateCommand": "cd projetoClassificacao-codespace && pip install -r requirements.txt && cd ../reactClassificacaoTCC-codespace && npm install"
+}
